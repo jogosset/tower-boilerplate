@@ -1,0 +1,86 @@
+/* Cards Category - Product category tile grid (raw EDS table structure) */
+.cards-category {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+/* Each card (direct child div = one row from the table) */
+.cards-category > div {
+  background-color: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+  transition: box-shadow 0.2s;
+}
+
+.cards-category > div:hover {
+  box-shadow: 0 4px 12px rgba(0 0 0 / 12%);
+}
+
+/* Image column */
+.cards-category > div > div:first-child {
+  padding: 16px;
+  line-height: 0;
+}
+
+.cards-category > div > div:first-child img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: contain;
+}
+
+/* Text/link column - override EDS button styling */
+.cards-category > div > div:last-child {
+  padding: 0 12px 16px;
+}
+
+.cards-category > div > div:last-child p {
+  margin: 0;
+}
+
+.cards-category > div > div:last-child a,
+.cards-category > div > div:last-child a.button {
+  display: inline;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  color: var(--color-text);
+  font-size: 14px;
+  font-weight: 600;
+  text-decoration: none;
+  text-transform: none;
+  white-space: normal;
+}
+
+.cards-category > div > div:last-child a:hover,
+.cards-category > div > div:last-child a.button:hover {
+  background: none;
+  color: var(--color-link);
+}
+
+@media (width >= 600px) {
+  .cards-category {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-category {
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 24px;
+  }
+
+  .cards-category > div > div:last-child a {
+    font-size: 16px;
+  }
+}
+
+@media (width >= 1200px) {
+  .cards-category {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}

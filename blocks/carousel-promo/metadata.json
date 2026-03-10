@@ -1,0 +1,39 @@
+{
+  "variantName": "carousel-promo",
+  "baseBlock": "carousel",
+  "version": "1.0.0",
+  "created": "2026-03-10T17:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://shop.vseaviation.com/",
+    "originPage": "VSE Aviation Shop homepage",
+    "blockPosition": "top"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "dark",
+    "density": "spacious",
+    "purpose": "promo-banner",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "image-slides + navigation-dots",
+    "buttonCount": 0,
+    "imageCount": 3
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "promotional banner carousels",
+      "homepage hero sliders",
+      "full-width image rotators"
+    ],
+    "notSuitableFor": [
+      "text-heavy content carousels",
+      "product detail galleries",
+      "testimonial sliders"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T17:50:00.000Z"
+  }
+}

@@ -1,0 +1,85 @@
+/* Columns Connect - Contact/links section */
+.columns-connect > div {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.columns-connect h2 {
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1.3;
+  margin-top: 0;
+}
+
+.columns-connect h3 {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin-top: 0;
+  margin-bottom: 12px;
+}
+
+.columns-connect p {
+  font-size: 14px;
+  line-height: 1.6;
+  margin: 8px 0;
+}
+
+.columns-connect ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.columns-connect li {
+  margin-bottom: 8px;
+}
+
+.columns-connect li a {
+  font-size: 14px;
+  font-weight: 400;
+  text-decoration: none;
+  opacity: 0.85;
+  transition: opacity 0.2s;
+}
+
+.columns-connect li a:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
+.columns-connect .button-container a.button {
+  background-color: transparent;
+  border: 2px solid #fff;
+  color: #fff;
+  border-radius: 4px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: none;
+}
+
+.columns-connect .button-container a.button:hover {
+  background-color: rgba(255 255 255 / 15%);
+}
+
+@media (width >= 900px) {
+  .columns-connect > div {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 48px;
+  }
+
+  .columns-connect > div > div {
+    flex: 1;
+  }
+
+  .columns-connect > div > div:first-child {
+    flex: 1.5;
+  }
+
+  .columns-connect h2 {
+    font-size: 28px;
+  }
+}

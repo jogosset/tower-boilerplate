@@ -1,0 +1,39 @@
+{
+  "variantName": "columns-connect",
+  "baseBlock": "columns",
+  "version": "1.0.0",
+  "created": "2026-03-10T17:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://shop.vseaviation.com/",
+    "originPage": "VSE Aviation Shop homepage",
+    "blockPosition": "bottom"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "compact",
+    "purpose": "contact-links",
+    "imagePattern": "noimg"
+  },
+  "contentPattern": {
+    "structure": "cta-column + link-list-columns",
+    "buttonCount": 1,
+    "imageCount": 0
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "contact/CTA sections with link columns",
+      "footer-like content sections",
+      "multi-column link lists"
+    ],
+    "notSuitableFor": [
+      "image-heavy layouts",
+      "dark background sections",
+      "single-column content"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T17:50:00.000Z"
+  }
+}

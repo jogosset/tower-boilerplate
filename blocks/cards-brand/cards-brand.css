@@ -1,0 +1,81 @@
+/* Cards Brand - Brand promotional tiles (raw EDS table structure) */
+.cards-brand {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 16px;
+}
+
+/* Each card (direct child div = one row from the table) */
+.cards-brand > div {
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+
+/* Image column */
+.cards-brand > div > div:first-child {
+  line-height: 0;
+}
+
+.cards-brand > div > div:first-child p {
+  margin: 0;
+}
+
+.cards-brand > div > div:first-child img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.3s;
+}
+
+.cards-brand > div:hover > div:first-child img {
+  transform: scale(1.03);
+}
+
+/* Link overlay column - override EDS button styling */
+.cards-brand > div > div:last-child {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+}
+
+.cards-brand > div > div:last-child p {
+  margin: 0;
+  height: 100%;
+}
+
+.cards-brand > div > div:last-child a,
+.cards-brand > div > div:last-child a.button {
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: none;
+  border-radius: 0;
+  padding: 0;
+  margin: 0;
+  color: transparent;
+  font-size: 0;
+  text-decoration: none;
+}
+
+.cards-brand > div > div:last-child a:hover,
+.cards-brand > div > div:last-child a.button:hover {
+  background: none;
+}
+
+@media (width >= 600px) {
+  .cards-brand {
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+  }
+}
+
+@media (width >= 900px) {
+  .cards-brand {
+    grid-gap: 24px;
+  }
+}

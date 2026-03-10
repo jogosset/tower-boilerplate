@@ -1,0 +1,39 @@
+{
+  "variantName": "cards-brand",
+  "baseBlock": "cards",
+  "version": "1.0.0",
+  "created": "2026-03-10T17:50:00.000Z",
+  "sourceContext": {
+    "originUrl": "https://shop.vseaviation.com/",
+    "originPage": "VSE Aviation Shop homepage",
+    "blockPosition": "middle"
+  },
+  "visualCharacteristics": {
+    "colorScheme": "light",
+    "density": "spacious",
+    "purpose": "brand-promo",
+    "imagePattern": "large"
+  },
+  "contentPattern": {
+    "structure": "large-image-link",
+    "buttonCount": 0,
+    "imageCount": 6
+  },
+  "reuseGuidance": {
+    "suitableFor": [
+      "brand promotional tiles",
+      "large image link grids",
+      "featured brand showcases"
+    ],
+    "notSuitableFor": [
+      "text-heavy cards",
+      "product detail cards",
+      "small icon grids"
+    ]
+  },
+  "usage": {
+    "pagesUsing": ["content/index"],
+    "reuseCount": 1,
+    "lastUsed": "2026-03-10T17:50:00.000Z"
+  }
+}
